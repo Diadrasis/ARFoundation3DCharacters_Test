@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2976094831051618958}
   - component: {fileID: 5172161773136091124}
-  - component: {fileID: 4192128357736535994}
   - component: {fileID: -429083962376928579}
+  - component: {fileID: 4250300155461050652}
   m_Layer: 0
   m_Name: Lod1_hat1_no_tools_anims_separated
   m_TagString: Untagged
@@ -53,18 +53,6 @@ Animator:
   m_HasTransformHierarchy: 0
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4192128357736535994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2240100614713624733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7926961659fe434a8a51e53c429ab26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &-429083962376928579
 AudioSource:
   m_ObjectHideFlags: 0
@@ -161,6 +149,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4250300155461050652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2240100614713624733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ca6fbb6c2dc024e969d0ef8de7c037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7547778520425997044
 GameObject:
   m_ObjectHideFlags: 0

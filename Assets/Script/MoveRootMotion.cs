@@ -3,29 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RootMotionScript : MonoBehaviour
+
+public class MoveRootMotion : MonoBehaviour
 {
 
-    Camera arCamera;
-    Text txtPosition;
-    void Start(){
-        arCamera=Camera.main;
-        txtPosition=GameObject.Find("txtPlanesCount").GetComponent<Text>();        
-    }
-
-    void OnAnimatorMove()
+    
+    Text txtCoveredDistance;
+    float coveredDistance=0f;
+    
+    void Start()
     {
+        
+        txtCoveredDistance=GameObject.Find("txtCoveredDistance").GetComponent<Text>();      
+        coveredDistance=0f;
+    }
+    
+    void OnAnimatorMove()
+    { 
         Animator animator = GetComponent<Animator>();                              
         if (animator)
         {
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
             {
                 Vector3 newPosition = transform.position;
-                newPosition.z -= animator.GetFloat("walkspeed") * Time.deltaTime; 
+                coveredDistance+=animator.GetFloat("walkspeed") * Time.deltaTime;
+                newPosition.z -=animator.GetFloat("walkspeed") * Time.deltaTime; 
                 transform.position = newPosition;
                 //Vector3.MoveTowards(arCamera.transform.position, transform.position, animator.GetFloat("walkspeed") * Time.deltaTime);
-            }
-            txtPosition.text=arCamera.transform.position.ToString();                
-        } 
+            }                           
+        }
+        txtCoveredDistance.text=coveredDistance.ToString();
     }  
 }
