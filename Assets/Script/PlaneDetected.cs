@@ -7,29 +7,41 @@ using UnityEngine.UI;
 public class PlaneDetected : MonoBehaviour
 {
     
+    enum State {showModel, hideModel};
     public GameObject AR_object;
     public ARRaycastManager raycastManager;
     public List<ARRaycastHit> hits = new List<ARRaycastHit>();
     Camera arCamera;
 
     bool bVibrate=true;
-    bool bCharacterAdded=false;
+   
     ARPlaneManager planeManager;
     int planes_count=0;   
      Text txtPlanesCount;
      Text txtPosition;
+
+      //the 3d model 
+      GameObject model;
+
+     //keep the app state
+     State appState=State.showModel;
     
     void Start()
     {
         //find the message text
         txtPlanesCount=GameObject.Find("txtPlanesCount").GetComponent<Text>();
         txtPosition=GameObject.Find("txtPlanesCount").GetComponent<Text>(); 
+       
+        
         
         //define the plane manager
         planeManager = GetComponent<ARPlaneManager>();
+        
         //deactivate
         planeManager.enabled=false;
         arCamera=Camera.main;
+
+       
         
          
          
@@ -54,7 +66,7 @@ public class PlaneDetected : MonoBehaviour
             if (planeManager.enabled==false){
                 planeManager.enabled=true;               
             } else {
-                if (bCharacterAdded==false){                    
+                if (appState==State.showModel){
                     Ray ray = arCamera.ScreenPointToRay(Input.mousePosition);
                     if(raycastManager.Raycast(ray, hits))
                     {
@@ -63,10 +75,14 @@ public class PlaneDetected : MonoBehaviour
                         //rotation of the ar object, inverted 
                         rot = new Vector3(rot.x, rot.y+180, rot.z); 
                         //calculate the rotation accordign to the camera              
-                        Instantiate(AR_object, pose.position, Quaternion.Euler(rot));
+                        model=Instantiate(AR_object, pose.position, Quaternion.Euler(rot));
                         //planeManager.enabled=false;                    
                     }
-                    bCharacterAdded=!bCharacterAdded;
+                    appState=State.hideModel;
+                }else{
+
+                    Destroy(model);
+                    appState=State.showModel;
                 }                
             }
         }
