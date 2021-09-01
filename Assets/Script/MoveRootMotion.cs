@@ -27,8 +27,7 @@ public class MoveRootMotion : MonoBehaviour
         if (animator)
         {
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
-            {
-                
+            {                
                 //we want him to move towards the camera
                 Quaternion newQuaternion;
                 Vector3 rot=arCamera.transform.rotation.eulerAngles;
@@ -43,10 +42,11 @@ public class MoveRootMotion : MonoBehaviour
                 */
                 //Vector3.MoveTowards(arCamera.transform.position, transform.position, animator.GetFloat("walkspeed") * Time.deltaTime);
 
-                transform.position = Vector3.MoveTowards(transform.position, arCamera.transform.position, animator.GetFloat("walkspeed") * Time.deltaTime);
+                Vector3 newPos=new Vector3(arCamera.transform.position.x, transform.position.y, arCamera.transform.position.z);
 
+                //transform.position = Vector3.MoveTowards(transform.position, arCamera.transform.position, animator.GetFloat("walkspeed") * Time.deltaTime);
 
-                
+                transform.position = Vector3.MoveTowards(transform.position, newPos, animator.GetFloat("walkspeed") * Time.deltaTime);               
 
             }                           
         }

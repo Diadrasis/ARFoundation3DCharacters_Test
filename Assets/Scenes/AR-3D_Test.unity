@@ -296,7 +296,7 @@ MonoBehaviour:
   m_FocusMode: -1
   m_LightEstimationMode: -1
   m_AutoFocus: 1
-  m_LightEstimation: 0
+  m_LightEstimation: -1
   m_FacingDirection: 1
 --- !u!114 &678175571
 MonoBehaviour:
@@ -459,7 +459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -756,7 +756,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AR_object: {fileID: 2240100614713624733, guid: 9fdb6f37d280c68489b1a2ee20796ae7, type: 3}
-  AR_Camera: {fileID: 678175568}
   raycastManager: {fileID: 960695347}
 --- !u!1 &1270563317
 GameObject:
