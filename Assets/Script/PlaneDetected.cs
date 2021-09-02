@@ -8,7 +8,7 @@ public class PlaneDetected : MonoBehaviour
 {
     
     enum State {showModel, hideModel};
-    public GameObject AR_object;
+    GameObject AR_object;
     public ARRaycastManager raycastManager;
     public List<ARRaycastHit> hits = new List<ARRaycastHit>();
     Camera arCamera;
@@ -19,31 +19,34 @@ public class PlaneDetected : MonoBehaviour
     int planes_count=0;   
      Text txtPlanesCount;
      Text txtPosition;
+     Text txtCoveredDistance;
 
       //the 3d model 
       GameObject model;
 
      //keep the app state
      State appState=State.showModel;
+
+     //toggle
+     Toggle t;
+     GameObject panel; 
     
     void Start()
     {
         //find the message text
         txtPlanesCount=GameObject.Find("txtPlanesCount").GetComponent<Text>();
-        txtPosition=GameObject.Find("txtPlanesCount").GetComponent<Text>(); 
-       
-        
+        txtPosition=GameObject.Find("txtPlanesCount").GetComponent<Text>();
+        txtCoveredDistance=GameObject.Find("txtCoveredDistance").GetComponent<Text>();                
         
         //define the plane manager
         planeManager = GetComponent<ARPlaneManager>();
         
         //deactivate
         planeManager.enabled=false;
-        arCamera=Camera.main;
-
-       
-        
-         
+        arCamera=Camera.main; 
+        //  
+        panel=GameObject.Find("SlidingPanel");
+        txtCoveredDistance.text="MITSOS";
          
     }
 
@@ -62,7 +65,25 @@ public class PlaneDetected : MonoBehaviour
         }
         txtPlanesCount.text=planes_count.ToString();
         
+        
         if (Input.GetMouseButtonDown(0)){
+            
+
+            
+            //check which toggle is selected           
+            t=panel.GetComponent<MoveSlidingPanel>().GetSelectedTogle();
+            txtCoveredDistance.text=t.name;
+          //Set the prefab according the selected toggle
+            if (t.name=="Toggle1"){                
+                AR_object=(GameObject)Resources.Load("jasper");
+
+            } else if (t.name=="Toggle2"){
+                AR_object=(GameObject)Resources.Load("pearl");
+            } else {
+                AR_object=(GameObject)Resources.Load("jasper");   
+            }
+            
+
             if (planeManager.enabled==false){
                 planeManager.enabled=true;               
             } else {
@@ -80,7 +101,6 @@ public class PlaneDetected : MonoBehaviour
                     }
                     appState=State.hideModel;
                 }else{
-
                     Destroy(model);
                     appState=State.showModel;
                 }                
