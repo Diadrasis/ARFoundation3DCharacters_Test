@@ -103,9 +103,10 @@ public class ShowARContent : MonoBehaviour
                     //rotation of the ar object, inverted 
                     rot = new Vector3(rot.x, rot.y+180, rot.z); 
                     //place the model on the plane and in spdcific distance of the camera
-                    Vector3 newPos= new Vector3(pose.position.x, pose.position.y, pose.position.z);              
+                    Vector3 newPos=arCamera.transform.forward*5;   
+                    newPos=new Vector3(arCamera.transform.forward.x, -0.5f, arCamera.transform.forward.z)*5;           
                     //model=Instantiate(AR_object, newPos, Quaternion.Euler(rot));
-                    model=Instantiate(AR_object, pose.position, Quaternion.Euler(rot));
+                    model=Instantiate(AR_object, newPos, Quaternion.Euler(rot));
                     txtPosePosition.text=pose.position.ToString();
                    
                     //planeManager.enabled=false; 
