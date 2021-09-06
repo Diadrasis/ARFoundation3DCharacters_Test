@@ -44,12 +44,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Petassos_Pbr
-    second: {fileID: 2100000, guid: 68788505eddc6c646b58042a405222f4, type: 2}
+    second: {fileID: 2100000, guid: 594f4ebe16ddae748a8612d5c2115112, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sandals_Pbr
-    second: {fileID: 2100000, guid: 92f7aeb9b54d068499160299b4434cc0, type: 2}
+    second: {fileID: 2100000, guid: d41c609d392572e46adbbe5f784e3b41, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
