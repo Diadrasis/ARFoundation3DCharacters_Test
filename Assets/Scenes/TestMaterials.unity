@@ -294,6 +294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pearl
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 6a51630bf5a38b34b86a38ef1c314ada, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 10d7bad3bba96f34386a17144f22e157, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a51630bf5a38b34b86a38ef1c314ada, type: 3}
 --- !u!1 &455321303
