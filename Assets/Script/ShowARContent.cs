@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ShowARContent : MonoBehaviour
 {
     //track the state of the game
-    public enum State {init, chooseModel, showModel, hideModel};
+    public enum State {chooseModel, recognisePlanes, showModel, hideModel};
     //keep the app state
     public State appState;
     //the character model we will show
@@ -34,7 +34,7 @@ public class ShowARContent : MonoBehaviour
     Toggle t;
 
     void Awake(){
-         appState=State.init;
+         //appState=State.chooseModel;
     }
     
     void Start()
@@ -61,36 +61,39 @@ public class ShowARContent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {       
-        
         txtAppState.text=appState.ToString();
         txtCameraPosition.text=arCamera.transform.position.ToString();
-        if (planeManager.enabled==true){
-            planes_count=planeManager.trackables.count;
-            //vibrate when first plane is detected
-            if (planes_count>0 && bVibrate==true){
-                Handheld.Vibrate();
-                bVibrate=false;                                         
-            }
-        }
-        txtPlanesCount.text=planes_count.ToString();
+             
+      
+        
         
         //when clicked
         if (Input.GetMouseButtonDown(0)){
-            if  (appState==State.init){
-                appState=State.showModel;
-            }       
-            if (appState==State.showModel){
+            if (appState==null){
+                appState=State.recognisePlanes;
+            } else if (appState==State.recognisePlanes){
+                planeManager.enabled=true;   
+                planes_count=planeManager.trackables.count;
+                if (planes_count>0){
+                    Handheld.Vibrate();
+                    planeManager.enabled=false;
+                    appState=State.showModel;                    
+                 }                                        
+            } else if (appState==State.showModel){
                 if (!planeManager.enabled){
                     planeManager.enabled=!planeManager.enabled;               
                 }
                 //check which toggle is selected           
                 t=panel.GetComponent<MoveSlidingPanel>().GetSelectedTogle();
+                //show the label of the selected model
                 txtModelName.text=t.GetComponentInChildren<Text>().text;              
                 //Set the prefab according the selected toggle
                 if (t.name=="Toggle1"){                
                     AR_object=(GameObject)Resources.Load("jasper");                    
                 } else if (t.name=="Toggle2"){
-                    AR_object=(GameObject)Resources.Load("pearl");                   
+                    AR_object=(GameObject)Resources.Load("pearl");   
+                } else if (t.name=="Toggle3"){
+                    AR_object=(GameObject)Resources.Load("Athenian_A");                   
                 } else {
                     AR_object=(GameObject)Resources.Load("jasper");                      
                 }
