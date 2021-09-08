@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ShowARContent : MonoBehaviour
 {
     //track the state of the game
-    public enum State {chooseModel, recognisePlanes, showModel, hideModel};
+    public enum State {chooseModel, recognizePlanes, showModel, hideModel};
     //keep the app state
     public State appState;
     //the character model we will show
@@ -55,7 +55,9 @@ public class ShowARContent : MonoBehaviour
         //get the camera
         arCamera=Camera.main; 
         //referebce the panel 
-        panel=GameObject.Find("SlidingPanel");         
+        panel=GameObject.Find("SlidingPanel"); 
+        appState=State.recognizePlanes; 
+        planes_count=0;       
     }
 
     // Update is called once per frame
@@ -63,15 +65,10 @@ public class ShowARContent : MonoBehaviour
     {       
         txtAppState.text=appState.ToString();
         txtCameraPosition.text=arCamera.transform.position.ToString();
-             
-      
-        
-        
+        txtPlanesCount.text=planes_count.ToString();
         //when clicked
         if (Input.GetMouseButtonDown(0)){
-            if (appState==null){
-                appState=State.recognisePlanes;
-            } else if (appState==State.recognisePlanes){
+            if (appState==State.recognizePlanes){
                 planeManager.enabled=true;   
                 planes_count=planeManager.trackables.count;
                 if (planes_count>0){
@@ -80,9 +77,6 @@ public class ShowARContent : MonoBehaviour
                     appState=State.showModel;                    
                  }                                        
             } else if (appState==State.showModel){
-                if (!planeManager.enabled){
-                    planeManager.enabled=!planeManager.enabled;               
-                }
                 //check which toggle is selected           
                 t=panel.GetComponent<MoveSlidingPanel>().GetSelectedTogle();
                 //show the label of the selected model

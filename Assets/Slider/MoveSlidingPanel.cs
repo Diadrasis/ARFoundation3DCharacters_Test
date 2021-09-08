@@ -25,7 +25,7 @@ public class MoveSlidingPanel : MonoBehaviour
             arSessionOrigin.GetComponent<ShowARContent>().appState=ShowARContent.State.chooseModel;
         } else {
             animator.SetBool("bSlide", false);
-            arSessionOrigin.GetComponent<ShowARContent>().appState=ShowARContent.State.recognisePlanes;
+            arSessionOrigin.GetComponent<ShowARContent>().appState=ShowARContent.State.recognizePlanes;
         }
         slide=!slide;
     }
