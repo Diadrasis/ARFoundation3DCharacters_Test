@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: 974250093a3a0b84cbc67b8028b8d997
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Diplomat
+    second: {fileID: 2100000, guid: 93a9665f35a3f784a88a4215a08fb6b4, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'bone_torso' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: bone_pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_LThigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_RThigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_Llowerleg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_Rlowerleg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_Lfoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_Rfoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_abs
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_Lupperarm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_Rupperarm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_Lelbow
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_Relbow
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_Lhand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_Rhand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Roman_Diplomat_Fix(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body
+      parentName: Roman_Diplomat_Fix(Clone)
+      position: {x: -0.0000013735383, y: 0.005658413, z: 0.0005146571}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toga
+      parentName: Roman_Diplomat_Fix(Clone)
+      position: {x: -0.0000013735383, y: 0.005658413, z: 0.0005146571}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scroll
+      parentName: Roman_Diplomat_Fix(Clone)
+      position: {x: 0.021032263, y: 0.012503194, z: -0.0006286593}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 0.65408474, y: 0.65408474, z: 0.65408474}
+    - name: Arms
+      parentName: Roman_Diplomat_Fix(Clone)
+      position: {x: 3.1998412e-10, y: 0.012601778, z: -0.0008412574}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sandals
+      parentName: Roman_Diplomat_Fix(Clone)
+      position: {x: 0.00000042928932, y: -0.021800522, z: 0.0000119590795}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 22.674252, y: 22.674252, z: 22.674252}
+    - name: Head
+      parentName: Roman_Diplomat_Fix(Clone)
+      position: {x: 0.0000012777805, y: 0.018811543, z: 0.00031700378}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dummy001
+      parentName: Roman_Diplomat_Fix(Clone)
+      position: {x: 0.0019661917, y: 0.24094623, z: 0.0035965354}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bone_pelvis
+      parentName: Dummy001
+      position: {x: -0.0028216303, y: 0.0019862312, z: -0.008299662}
+      rotation: {x: -0.00000008940697, y: 4.5877563e-10, z: -4.47586e-11, w: 1}
+      scale: {x: 10, y: 10, z: 10}
+    - name: bone_LThigh
+      parentName: bone_pelvis
+      position: {x: -0.002419066, y: -1.5381812e-10, z: 0.00001910979}
+      rotation: {x: -0, y: -0.0000000033233254, z: 4.475853e-11, w: 1}
+      scale: {x: 1, y: 1.0000004, z: 1.0000001}
+    - name: bone_Llowerleg
+      parentName: bone_LThigh
+      position: {x: -0.0005946825, y: 0.00012688013, z: -0.011800911}
+      rotation: {x: 0.00000008940697, y: 0.000000010949987, z: -0.000000008085436, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000006}
+    - name: bone_Lfoot
+      parentName: bone_Llowerleg
+      position: {x: -0.00058816385, y: 0.00031508697, z: -0.010175859}
+      rotation: {x: -0, y: 5.2939553e-23, z: 0.000000008085436, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: bone_RThigh
+      parentName: bone_pelvis
+      position: {x: 0.0024190657, y: -1.5381812e-10, z: 0.000019108353}
+      rotation: {x: -0, y: 0.0000000024057754, z: -0.0000000056843423, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000005}
+    - name: bone_Rlowerleg
+      parentName: bone_RThigh
+      position: {x: 0.000594685, y: 0.00012687797, z: -0.01180091}
+      rotation: {x: -4.346023e-17, y: 0.000000005220886, z: 0.000000005729101, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: bone_Rfoot
+      parentName: bone_Rlowerleg
+      position: {x: 0.0005881652, y: 0.00031508747, z: -0.0101758605}
+      rotation: {x: -0, y: -0.000000008590776, z: -3.8857806e-16, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 0.9999999}
+    - name: bone_abs
+      parentName: bone_pelvis
+      position: {x: 2.8386712e-10, y: 0, z: 0.0053965333}
+      rotation: {x: -0, y: -2.098059e-10, z: 2.237928e-11, w: 1}
+      scale: {x: 1, y: 1.0000006, z: 1.0000007}
+    - name: bone_torso
+      parentName: bone_abs
+      position: {x: -0.0000074809395, y: -0.000006223692, z: 0.005373567}
+      rotation: {x: -3.3806242e-21, y: -3.6086623e-10, z: 2.237927e-11, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999976}
+    - name: bone_Rupperarm
+      parentName: bone_torso
+      position: {x: 0.004536784, y: 0.0006070764, z: 0.0019869837}
+      rotation: {x: -0, y: 0.000000020163746, z: -0.000000014322747, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000001}
+    - name: bone_Relbow
+      parentName: bone_Rupperarm
+      position: {x: 0.007676073, y: 0.00035016335, z: 0.00028166582}
+      rotation: {x: -9.797111e-11, y: -0.00059925596, z: 0.0052523976, w: 0.99998605}
+      scale: {x: 1.0000007, y: 0.99999964, z: 1.0000001}
+    - name: bone_Rhand
+      parentName: bone_Relbow
+      position: {x: 0.0072094337, y: -0.0006694052, z: -0.00007637094}
+      rotation: {x: -0, y: -0.0000000458328, z: 0.0000000019693758, w: 1}
+      scale: {x: 0.9999999, y: 1.0000004, z: 1.0000004}
+    - name: bone_Lupperarm
+      parentName: bone_torso
+      position: {x: -0.0045218198, y: 0.00060707657, z: 0.0019869832}
+      rotation: {x: -3.475784e-19, y: 0.0000000287574, z: -0.0000000028645484, w: 1}
+      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000004}
+    - name: bone_Lelbow
+      parentName: bone_Lupperarm
+      position: {x: -0.0076760696, y: 0.00035016562, z: 0.0002816628}
+      rotation: {x: 0.000000089554476, y: 0.00059917144, z: -0.0052527306, w: 0.9999861}
+      scale: {x: 1.0000012, y: 0.99999934, z: 1.0000002}
+    - name: bone_Lhand
+      parentName: bone_Lelbow
+      position: {x: -0.007209433, y: -0.0006694109, z: -0.000076365555}
+      rotation: {x: -0.00000008940697, y: 0.0000000401037, z: 0.000000003938755, w: 1}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999999}
+    - name: bone_head
+      parentName: bone_torso
+      position: {x: -0.0000015678474, y: -1.8325988e-11, z: 0.005968315}
+      rotation: {x: -0, y: -2.4617225e-10, z: 1.3877788e-17, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000002}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

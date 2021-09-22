@@ -1,58 +1,146 @@
 fileFormatVersion: 2
 guid: 5d0e205eca271184680cdcbb37324e19
-timeCreated: 1493987552
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Body
-    100002: bone_abs
-    100004: bone_head
-    100006: bone_Lelbow
-    100008: bone_Lfoot
-    100010: bone_Lhand
-    100012: bone_Llowerleg
-    100014: bone_LThigh
-    100016: bone_Lupperarm
-    100018: bone_pelvis
-    100020: bone_Relbow
-    100022: bone_Rfoot
-    100024: bone_Rhand
-    100026: bone_Rlowerleg
-    100028: bone_RThigh
-    100030: bone_Rupperarm
-    100032: bone_torso
-    100034: //RootNode
-    100036: Body_collision
-    400000: Body
-    400002: bone_abs
-    400004: bone_head
-    400006: bone_Lelbow
-    400008: bone_Lfoot
-    400010: bone_Lhand
-    400012: bone_Llowerleg
-    400014: bone_LThigh
-    400016: bone_Lupperarm
-    400018: bone_pelvis
-    400020: bone_Relbow
-    400022: bone_Rfoot
-    400024: bone_Rhand
-    400026: bone_Rlowerleg
-    400028: bone_RThigh
-    400030: bone_Rupperarm
-    400032: bone_torso
-    400034: //RootNode
-    400036: Body_collision
-    4300000: Body
-    4300002: Body_collision
-    7400000: Take 001
-    9500000: //RootNode
-    13700000: Body
-    13700002: Body_collision
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Body
+  - first:
+      1: 100002
+    second: bone_abs
+  - first:
+      1: 100004
+    second: bone_head
+  - first:
+      1: 100006
+    second: bone_Lelbow
+  - first:
+      1: 100008
+    second: bone_Lfoot
+  - first:
+      1: 100010
+    second: bone_Lhand
+  - first:
+      1: 100012
+    second: bone_Llowerleg
+  - first:
+      1: 100014
+    second: bone_LThigh
+  - first:
+      1: 100016
+    second: bone_Lupperarm
+  - first:
+      1: 100018
+    second: bone_pelvis
+  - first:
+      1: 100020
+    second: bone_Relbow
+  - first:
+      1: 100022
+    second: bone_Rfoot
+  - first:
+      1: 100024
+    second: bone_Rhand
+  - first:
+      1: 100026
+    second: bone_Rlowerleg
+  - first:
+      1: 100028
+    second: bone_RThigh
+  - first:
+      1: 100030
+    second: bone_Rupperarm
+  - first:
+      1: 100032
+    second: bone_torso
+  - first:
+      1: 100034
+    second: //RootNode
+  - first:
+      1: 100036
+    second: Body_collision
+  - first:
+      4: 400000
+    second: Body
+  - first:
+      4: 400002
+    second: bone_abs
+  - first:
+      4: 400004
+    second: bone_head
+  - first:
+      4: 400006
+    second: bone_Lelbow
+  - first:
+      4: 400008
+    second: bone_Lfoot
+  - first:
+      4: 400010
+    second: bone_Lhand
+  - first:
+      4: 400012
+    second: bone_Llowerleg
+  - first:
+      4: 400014
+    second: bone_LThigh
+  - first:
+      4: 400016
+    second: bone_Lupperarm
+  - first:
+      4: 400018
+    second: bone_pelvis
+  - first:
+      4: 400020
+    second: bone_Relbow
+  - first:
+      4: 400022
+    second: bone_Rfoot
+  - first:
+      4: 400024
+    second: bone_Rhand
+  - first:
+      4: 400026
+    second: bone_Rlowerleg
+  - first:
+      4: 400028
+    second: bone_RThigh
+  - first:
+      4: 400030
+    second: bone_Rupperarm
+  - first:
+      4: 400032
+    second: bone_torso
+  - first:
+      4: 400034
+    second: //RootNode
+  - first:
+      4: 400036
+    second: Body_collision
+  - first:
+      43: 4300000
+    second: Body
+  - first:
+      43: 4300002
+    second: Body_collision
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Body
+  - first:
+      137: 13700002
+    second: Body_collision
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -65,12 +153,15 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -78,26 +169,45 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 1
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 1
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 2
     tangentImportMode: 2
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 2
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 1
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: bone_pelvis
       humanName: Hips
@@ -350,15 +460,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c04a37897a9de43019fdaccfbf92a185,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c04a37897a9de43019fdaccfbf92a185, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
